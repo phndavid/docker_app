@@ -6,7 +6,7 @@ RUN tar zxf node-v0.10.4.tar.gz
 WORKDIR node-v0.10.4
 RUN ./configure
 RUN make &&  make install
-ADD smartsports /smartsports
-WORKDIR /smartsports
+ADD smartsports /usr/src/smartsports
+WORKDIR /usr/src/smartsports
 EXPOSE 3000
-CMD node server.js
+CMD nohup node server.js > /dev/null 2>&1 &
