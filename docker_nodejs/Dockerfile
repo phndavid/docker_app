@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 MAINTAINER Nelson David Padilla H. <phndavid@gmail.com>
 RUN apt-get update && apt-get install -y wget && apt-get install -y python && apt-get install -y build-essential
 RUN wget http://nodejs.org/dist/v0.10.4/node-v0.10.4.tar.gz
