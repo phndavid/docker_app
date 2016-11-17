@@ -1,0 +1,14 @@
+version: '2'
+services:
+  node:
+    image: node_ubuntu:latest
+    ports:
+      - "49160:3000"
+    links:
+      - postgres
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres_ubuntu:latest
+    ports:
+      - "5432:5432"
