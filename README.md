@@ -32,11 +32,9 @@ Una vez finalizado este procedimiento, puede ir al navegador y ejecutar la sigui
 </ul>
 
 <h2><b>Contrato de API REST</b></h2>
-<table>
-  <tr>
-    <th>GET<br><br>/api/device</th>
-    <th>Obtiene<br>los datos de la base de datos Posgresql, ubicada en la imagen postgres_ubuntu.</th>
-  </tr>
-</table>
+ HTTP METHOD | POST            | GET       | PUT         | DELETE |
+| ----------- | --------------- | --------- | ----------- | ------ |
+| CRUD OP     | CREATE          | READ      | UPDATE      | DELETE |
+| /api/device |                 | Lee dispositivos |      |        |
 <b>Responsable:</b>
 Nelson D. Padilla H.
