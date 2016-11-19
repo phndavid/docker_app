@@ -10,6 +10,12 @@
 <li>3. Ejecutar el comando docker-compose up</li>
 <li>4. Una vez finalizado este procedimiento, puede ir al navegador y ejecutar la siguientes Ip:</li>
   <ul>
+ <table>
+  <tr>
+    <th>GET<br><br>{{host}}/api/device</th>
+    <th>Obtiene<br>los datos de la base de datos Posgresql, ubicada en la imagen postgres_ubuntu.</th>
+  </tr>
+</table>
 <li>a) 120.0.0.1:49160 (Aplicación web) para ingresar al REST de la base de datos digitar la URI /api/device</li>
 </ul>
 </ul>
