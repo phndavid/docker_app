@@ -16,7 +16,7 @@
 <h2><b>Contrato de API REST</b></h2>
 <table>
   <tr>
-    <th>GET<br><br>{{host}}/api/device</th>
+    <th>GET<br><br>/api/device</th>
     <th>Obtiene<br>los datos de la base de datos Posgresql, ubicada en la imagen postgres_ubuntu.</th>
   </tr>
 </table>
