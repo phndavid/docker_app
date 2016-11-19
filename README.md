@@ -4,15 +4,33 @@
 
 <p>Este repositorio permite aprovisionar automáticamente 2 contenedore que incluyen un servidor de base de datos y web. </p>
 <p><b>Nota:</b> realizar en un computador con sistema operativo Ubuntu. Previamente, se debe tener instalado Docker en la computadora que en la que se desea realizar el aprovisionamiento. </p>
+
+## 1. Clonar repositorio
+
+```
+$ git clone https://github.com/phndavid13/docker_app
+```
+## 2. Crear imagenes
+Ingrese al directorio docker_nodejs, para crear la imagen del servicio web ejecute la siguiente instrucción:
+```
+$ docker build -t node_ubuntu .
+```
+Ingrese al directorio docker_postgres, para crear la imagen del servicio de base de datos ejecute la siguiente instrucción:
+```
+$ docker build -t postgres_ubuntu .
+```
+## 3. Ejecutar docker-compose
+Ingrese al directorio docker_app y ejecute la siguiente instrucción:
+```
+$ docker-compose up
+```
+
+
+Una vez finalizado este procedimiento, puede ir al navegador y ejecutar la siguientes Ip:
 <ul>
-<li>1. Clonar repositorio</li>
-<li>2. Ingresar al directoio docker_app </li>
-<li>3. Ejecutar el comando docker-compose up</li>
-<li>4. Una vez finalizado este procedimiento, puede ir al navegador y ejecutar la siguientes Ip:</li>
-  <ul>
 <li>a) 120.0.0.1:49160 (Aplicación web) para ingresar al REST de la base de datos digitar la URI /api/device</li>
 </ul>
-</ul>
+
 <h2><b>Contrato de API REST</b></h2>
 <table>
   <tr>
